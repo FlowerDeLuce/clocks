@@ -1,0 +1,96 @@
+a {
+  transition: 0.3s;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button {
+  transition: 0.3s;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+label {
+  vertical-align: middle;
+}
+
+.l-html {
+
+}
+
+.l-body {
+  font-family: $Montserrat;
+}
+
+
+/**
+ * @section wrapper
+ */
+.l-wrapper {
+
+
+}
+
+
+
+.multiselect-container > li a {
+  color: #464a4c;
+}
+/* sortable */
+
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ol.example li.placeholder {
+  position: relative;
+  /** More li styles **/
+}
+ol.example li.placeholder:before {
+  position: absolute;
+  /** Define arrowhead **/
+}
+
+/* icons */
+
+.icon{
+  &.close {
+    color:#464a4c;
+    font-size: 18px;
+    float: none;
+    font-weight: normal;
+    line-height: 1.4;
+  }
+}
+
+
+/* table */
+
+.-state_pending {
+  color: #0a83fd;
+}
+
+.-state_completed {
+  color: #3ae267;
+}
+
+/* ui */
+.ui-menu-item {
+  background-color: #fff;
+  font-family: $Montserrat;
+  font-size: 13px;
+}
+
+.js-active-form-errors{
+  margin-bottom: 15px;
+  color: #ff0000;
+}

@@ -1,0 +1,232 @@
+span.multiselect-native-select{
+  position:relative;
+  display: block;
+  width: 100%;
+  font-family: $Montserrat;
+  font-size: 14px;
+  -webkit-appearance: none;
+  font-weight: 400;
+  color: #a3abb2;
+  border-radius: 0;
+  .btn-group{
+    width: 100%;
+    display: block;
+  }
+  .custom-control-indicator{
+    display: none;
+  }
+}
+
+span.multiselect-native-select select{
+  border :0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px -1px -1px -3px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  left: 50%;
+  top: 30px;
+}
+
+.btn-group.show>.multiselect.btn{
+
+}
+.jBox-content .multiselect-container{
+  max-height: 220px;
+}
+.multiselect-container {
+  position: absolute;
+  font-size: 13px;
+  list-style-type: none;
+  margin: 5px 0 0;
+  width: auto;
+  min-width: 100%;
+  padding: 0 0 7px;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 0;
+  .multiselect-filter{
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    .input-group {
+      margin: 0 0 5px;
+    }
+    .multiselect-clear-filter{
+      min-width: auto;
+      cursor: pointer;
+      padding: 0 15px;
+      margin-bottom: 0;
+      color: #292b2c;
+      border: 1px solid #e1e1e1;
+      background: #eceeef;
+    }
+  }
+
+
+  > li {
+    padding: 0;
+    //margin-bottom: 5px;
+    &:first-child:not(.multiselect-filter){
+      margin-top: 10px;
+    }
+    &:hover{
+      background: #f2f2f2;
+      a{
+        text-decoration: none;
+      }
+    }
+    .custom-checkbox{
+      width: 100%;
+      padding: 5px 0.95rem;
+      >.custom-control-indicator {
+        position: absolute !important;
+        left: 15px;
+        top: 6px;
+      }
+    }
+
+    a{
+      color: #000000;
+      width: 100%;
+    }
+    &.active li{
+      font-weight: 600;
+    }
+
+    > a.multiselect-all label {
+      color: #292b2c;
+    }
+
+    &.multiselect-group label {
+      margin: 0;
+      padding: 5px 20px 5px 20px;
+      height: 100%;
+      font-weight: bold;
+    }
+
+    &.multiselect-group-clickable label {
+      cursor: pointer;
+    }
+
+    > a {
+      padding: 0;
+
+      > label {
+        margin: 0;
+        height: 100%;
+        cursor: pointer;
+        font-weight: normal;
+        padding: 3px 20px 3px 20px;
+        display: inline-flex !important;
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
+        &.radio, &.checkbox {
+          margin: 0;
+          white-space: nowrap;
+        }
+
+        > input[type="checkbox"] {
+          margin-bottom:5px;
+        }
+      }
+    }
+  }
+}
+
+.btn-group > .btn-group:nth-child(2) > .multiselect.btn {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.form-inline .multiselect-container{
+
+  label.checkbox, label.radio{
+    padding: 3px 20px 3px 20px;
+    justify-content: flex-start;
+  }
+
+  li a label{
+
+    &.checkbox input[type="checkbox"], &.radio input[type="radio"]{
+      margin-left: -20px;
+      margin-right: 0;
+    }
+  }
+}
+
+.multiselect.btn.dropdown-toggle{
+  font-family: $Montserrat;
+  border:  1px solid #e1e6eb;
+  box-sizing: border-box;
+  background-color:  #ffffff;
+  height: 50px;
+  font-size: 14px;
+  -webkit-appearance: none;
+  font-weight: 400;
+  color: #a3abb2;
+  border-radius: 0;
+  display: flex;
+  padding: 0.95rem;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  &:focus{
+    box-shadow: none;
+    border-color: #95bacc;
+  }
+  &:after {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    color: #afb4be;
+  }
+  .multiselect-selected-text{
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    text-transform: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: calc(100% - 15px);
+  }
+}
+*[kcms-role="active-form"] .-state_active-form-element-invalid+.btn-group>.multiselect.btn{
+  //box-shadow: 0 0 0 1px rgba(204, 0, 13, 0.5);
+}
+.has-error select + .btn-group>.multiselect.btn{
+  //border-color: #dc7471;
+}
+
+.multiselect-container.dropdown-menu{
+  user-select: none;
+  input[type='radio']{
+    position: absolute;
+    z-index: -1;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+  }
+  li a{
+    cursor: pointer;
+    &:focus{
+      background-color: #d34900;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.-dropdownUp{
+  .multiselect-container.dropdown-menu{
+    top: -10px;
+    transform: translateY(-100%);
+  }
+}
+

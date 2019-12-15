@@ -1,0 +1,42 @@
+{
+  "name": "fldlc",
+  "version": "1",
+  "description": "boilerplate",
+  "devDependencies": {
+    "autoprefixer": "7.1.4",
+    "babel-core": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "cssnano": "3.10.0",
+    "grunt": "1.0.1",
+    "grunt-babel": "7.0.0",
+    "grunt-concurrent": "2.3.1",
+    "grunt-contrib-clean": "1.1.0",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-csslint": "2.0.0",
+    "grunt-contrib-imagemin": "2.0.1",
+    "grunt-contrib-jshint": "1.1.0",
+    "grunt-contrib-uglify": "3.1.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-datauri": "0.4.0",
+    "grunt-jscs": "3.0.1",
+    "grunt-postcss": "0.9.0",
+    "grunt-sass": "2.0.0",
+    "grunt-shell": "2.1.0",
+    "grunt-spritesmith": "6.4.0",
+    "jshint-stylish": "2.2.1",
+    "load-grunt-config": "0.19.2",
+    "pixrem": "4.0.1",
+    "time-grunt": "1.4.0"
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "scripts": {
+    "start": "grunt concurrent:dev"
+  },
+  "author": {
+    "name": "fldlc",
+    "url": ""
+  }
+}

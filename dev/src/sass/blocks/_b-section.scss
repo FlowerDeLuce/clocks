@@ -1,0 +1,28 @@
+.b-section{
+  &Title{
+    color: #021539;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    &.-white{
+      color: #fff;
+    }
+  }
+  &Subtitle{
+    color: #021539;
+    font-size: 20px;
+    text-align: center;
+    &.-white{
+      color: #fff;
+    }
+  }
+  &.-bg-white{
+    background: #fff;
+  }
+  &.-bg-beige{
+    background: #f8f6f4;
+  }
+}
+
+

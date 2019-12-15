@@ -1,0 +1,28 @@
+.b-topBanner{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/img/blocks/bg/banner-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  &__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &Img{
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__text{
+    text-align: center;
+    line-height: 1.4;
+    font-size: 22px;
+    max-width: 600px;
+    margin: 30px auto;
+    color: #fff;
+    padding-bottom: 30%;
+  }
+}
+
+
