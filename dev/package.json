@@ -30,7 +30,7 @@
     "time-grunt": "1.4.0"
   },
   "dependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.13.1"
   },
   "scripts": {
     "start": "grunt concurrent:dev"
